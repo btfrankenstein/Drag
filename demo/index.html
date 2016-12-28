@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #outer {
+        background-color: red;
+        width: 200px;
+        height: 500px;
+        position: relative;
+      }
+
+      #inner {
+        background-color: #000;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="" id="outer">
+      <div class="" id="inner"></div>
+    </div>
+    <script src="drag.js"></script>
+    <script type="text/javascript">
+      Drag(document.getElementById("inner"), document.getElementById("outer"));
+    </script>
+  </body>
+</html>
